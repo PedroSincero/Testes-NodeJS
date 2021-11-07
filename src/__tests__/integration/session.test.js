@@ -1,12 +1,11 @@
+const { User } = require('../../app/models');
 
 describe('Authentication', () => {
-  it('should receive JWT token when authenticated with valid credentials', () => {
-    const x = 2;
-    const y = 4;
+  it('should receive JWT token when authenticated with valid credentials', async () => {
+    const user = await User.create({name: 'Pedro', email: 'pedro@example.com', password_hash: '123456789'});
 
-    const sum = x + y;
-
-    expect(sum).toBe(6);
+    console.log(user);
+    expect(user.email).toBe('pedro@example.com');
   });
 });
 

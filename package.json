@@ -4,7 +4,9 @@
   "description": "Repositório utilizado para treinamento de Testes no NodeJS, aplicação de TDD com Jest .",
   "main": "index.js",
   "scripts": {
+    "pretest": "NODE_ENV=test sequelize db:migrate",
     "test": "NODE_ENV=test jest",
+    "posttest": "NODE_ENV=test sequelize db:migrate:undo:all",
     "start": "node src/server.js",
     "dev": "nodemon src/server.js --ignore __tests__"
   },
@@ -29,6 +31,7 @@
   "devDependencies": {
     "jest": "^27.3.1",
     "nodemon": "^2.0.14",
-    "sequelize-cli": "^6.3.0"
+    "sequelize-cli": "^6.3.0",
+    "sqlite3": "^5.0.2"
   }
 }
