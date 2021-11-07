@@ -4,7 +4,6 @@ module.exports = {
   password: '12345678',
   database: 'nodeauth',
   dialect: 'mysql',
-  operatorsAliases: false,
   logging: false,
   define: {
     timestamps: true,

@@ -4,7 +4,9 @@
   "description": "Repositório utilizado para treinamento de Testes no NodeJS, aplicação de TDD com Jest .",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "NODE_ENV=test jest",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js --ignore __tests__"
   },
   "repository": {
     "type": "git",
@@ -18,11 +20,15 @@
   },
   "homepage": "https://github.com/PedroSincero/Testes-NodeJS#readme",
   "dependencies": {
+    "@types/jest": "^27.0.2",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "mysql2": "^2.3.3-rc.0",
     "sequelize": "^6.9.0"
   },
   "devDependencies": {
+    "jest": "^27.3.1",
+    "nodemon": "^2.0.14",
     "sequelize-cli": "^6.3.0"
   }
 }
