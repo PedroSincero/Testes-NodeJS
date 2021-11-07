@@ -1,0 +1,28 @@
+{
+  "name": "testes-nodejs",
+  "version": "1.0.0",
+  "description": "Repositório utilizado para treinamento de Testes no NodeJS, aplicação de TDD com Jest .",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PedroSincero/Testes-NodeJS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PedroSincero/Testes-NodeJS/issues"
+  },
+  "homepage": "https://github.com/PedroSincero/Testes-NodeJS#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^2.3.3-rc.0",
+    "sequelize": "^6.9.0"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.3.0"
+  }
+}
