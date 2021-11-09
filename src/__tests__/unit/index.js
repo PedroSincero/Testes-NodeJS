@@ -1,1 +1,0 @@
-// Testam funções puras, dado as mesma variaveis. não importando quantas vezes, elas terão o mesmo retorno, geralmente nunca tocam em efeitos colaterais. Em recursos que podem dar errado.

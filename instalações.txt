@@ -1,0 +1,2 @@
+faker: https://www.npmjs.com/package/faker
+factory-girl: https://www.npmjs.com/package/factory-girl
